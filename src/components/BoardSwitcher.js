@@ -9,11 +9,22 @@ function Board(props) {
   return <div className={className}>{props.index + 1}</div>;
 }
 
+//const [selectedIndex, setSelectedIndex] = useState(0);
+
+
+function setSelectedIndex(prevSelectedIndex) {
+  let newSelectedIndex = prevSelectedIndex+1;
+  if (newSelectedIndex > 4) newSelectedIndex = 0;
+  return newSelectedIndex;
+}
+
 function BoardSwitcher(props) {
   let boards = [];
   for (let ii = 0; ii < props.numBoards; ii++) {
-    let isSelected = ii === 0;
-    boards.push(<Board index={ii} selected={isSelected} key={ii} />);
+    let newIndex = setSelectedIndex(ii);
+    let isSelected = ii === newIndex;
+    boards.push(<Board index={ii} selected={isSelected} key={ii}  />);
+    
   }
 
   return (
