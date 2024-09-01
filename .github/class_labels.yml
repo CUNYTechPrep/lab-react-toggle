@@ -1,0 +1,12 @@
+Tuesday:
+  - '- \[(x|X)\] Tuesday'
+Wednesday6pm:
+  - '- \[(x|X)\] Wednesday 6pm IP'
+Wednesday630pm:
+  - '- \[(x|X)\] Wednesday 6:30pm Virtual'
+Thursday:
+  - '- \[(x|X)\] Thursday'
+Friday3pm:
+  - '- \[(x|X)\] Friday 3pm'
+Friday630pm:
+  - '- \[(x|X)\] Friday 6:30pm'
