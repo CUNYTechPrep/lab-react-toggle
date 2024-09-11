@@ -13,7 +13,8 @@ function BoardSwitcher(props) {
   const [selection, setSelection] = useState(0);
 
   const handleClick = (event) => {
-    setSelection((selection + 1) % 5);
+    setSelection((selection + 1) % props.numBoards);
+    console.log(selection);
   };
 
   let boards = [];
