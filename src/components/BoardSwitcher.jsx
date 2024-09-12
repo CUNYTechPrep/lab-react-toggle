@@ -10,15 +10,15 @@ function Board(props) {
 }
 
 function BoardSwitcher(props) {
-  const [selectedBoard, setSelectedBoard] = useState(0); // State to track the selected board
+  const [selectedBoard, setSelectedBoard] = useState(0);
 
   const toggleBoard = () => {
-    setSelectedBoard((prevBoard) => (prevBoard + 1) % props.numBoards); // Toggles between boards
+    setSelectedBoard((prevBoard) => (prevBoard + 1) % props.numBoards); 
   };
 
   let boards = [];
   for (let ii = 0; ii < props.numBoards; ii++) {
-    let isSelected = ii === selectedBoard; // Check if current board is selected
+    let isSelected = ii === selectedBoard;
     boards.push(<Board index={ii} selected={isSelected} key={ii} />);
   }
 
