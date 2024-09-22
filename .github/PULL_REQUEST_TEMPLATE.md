@@ -13,15 +13,15 @@ TITLE: Include your section in the pull request title
 
 - [ ] Wednesday 6pm IP
 - [ ] Wednesday 6:30pm Virtual
-- [ ] Friday 6:30pm
+- [x] Friday 6:30pm
 
 **Is the solution complete?**
 
-[Yes/No]
+[Yes]
 
 **Did you run into any problems?**
 
-[Describe...]
+[No]
 
 **Did you collaborate with others on this solution?**
 
